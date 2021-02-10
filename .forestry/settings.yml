@@ -1,9 +1,13 @@
+new_page_extension: md
+auto_deploy: false
+admin_path:
+webhook_url:
 sections:
   - type: heading
     label: Content
 
   - type: directory
-    path: content/
+    path: content/projects
     label: projects
     create: documents
     match: "**/*"
@@ -12,7 +16,7 @@ sections:
       - blog-post
 
   - type: directory
-    path: content/
+    path: content/experiences
     label: experiences
     create: documents
     match: "**/*"
@@ -21,10 +25,19 @@ sections:
       - experiences
 
   - type: directory
-    path: content/
+    path: content/qualifications
     label: qualifications
     create: documents
     match: "**/*"
     new_doc_ext: md
     templates:
       - qualifications
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run develop

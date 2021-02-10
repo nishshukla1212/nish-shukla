@@ -1,0 +1,30 @@
+sections:
+  - type: heading
+    label: Content
+
+  - type: directory
+    path: content/
+    label: projects
+    create: documents
+    match: "**/*"
+    new_doc_ext: md
+    templates:
+      - blog-post
+
+  - type: directory
+    path: content/
+    label: experiences
+    create: documents
+    match: "**/*"
+    new_doc_ext: md
+    templates:
+      - experiences
+
+  - type: directory
+    path: content/
+    label: qualifications
+    create: documents
+    match: "**/*"
+    new_doc_ext: md
+    templates:
+      - qualifications

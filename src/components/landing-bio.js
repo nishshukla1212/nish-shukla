@@ -25,6 +25,11 @@ const NameHeader = styled.h1`
   font-size: 3.5rem;
   margin-bottom: 0;
 `
+const GaneshIcon = styled.i`
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  background: url("../images/svg/003-man.svg");
+`
 
 const LandingBio = () => (
   <StaticQuery
@@ -38,10 +43,13 @@ const LandingBio = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <OuterContainer>
         <Container>
-          <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+          <span>
+            <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+            <GaneshIcon></GaneshIcon>
+          </span>
           <Description>{data.site.siteMetadata.subtitle}</Description>
         </Container>
       </OuterContainer>

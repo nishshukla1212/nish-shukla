@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import manIcon from "../images/svg/003-man.svg"
+import desktopIcon from "../images/svg/desktop-computer.svg"
 
 const Container = styled.div`
   text-align: center;
@@ -15,20 +17,15 @@ const OuterContainer = styled.div`
   height: 78vh;
 `
 
-const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-`
-
 const NameHeader = styled.h1`
   font-size: 3.5rem;
   margin-bottom: 0;
+  margin-bottom: 2%;
 `
-const GaneshIcon = styled.i`
-  font-size: 3.5rem;
-  margin-bottom: 0;
-  background: url("src/images/svg/003-man.svg");
+
+const Icon = styled.img`
+  width:70px;
+  position: relative;
 `
 
 const LandingBio = () => (
@@ -48,9 +45,8 @@ const LandingBio = () => (
         <Container>
           <span>
             <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-            <GaneshIcon></GaneshIcon>
+            <Icon src={manIcon} alt="man"/><Icon src={desktopIcon} alt="man"/>
           </span>
-          <Description>{data.site.siteMetadata.subtitle}</Description>
         </Container>
       </OuterContainer>
     )}

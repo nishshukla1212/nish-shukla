@@ -28,7 +28,7 @@ const NameHeader = styled.h1`
 const GaneshIcon = styled.i`
   font-size: 3.5rem;
   margin-bottom: 0;
-  background: url("../images/svg/003-man.svg");
+  background: url("src/images/svg/003-man.svg");
 `
 
 const LandingBio = () => (

@@ -10,7 +10,7 @@ const Content = styled.div`
 `
 
 const NavLink = styled(Link)`
-  color: black;
+  color: #c8d1d7;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -24,7 +24,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(98, 15, 46, 0.8);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -36,7 +36,7 @@ const NavLink = styled(Link)`
 `
 
 const GitHubLink = styled.a`
-  color: black;
+  color: #c8d1d7;
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -50,7 +50,7 @@ const GitHubLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(98, 15, 46, 0.8);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -81,6 +81,7 @@ const Header = ({ siteTitle }) => (
         <GitHubLink href="https://github.com/nishshukla1212" target="_blank">
           GitHub
         </GitHubLink>
+        
       </p>
     </Content>
   </SiteHeader>

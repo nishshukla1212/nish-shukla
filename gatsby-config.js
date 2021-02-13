@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Nish Shukla`,
     subtitle: `Software Developer`,
-    description: `A minimal blog starter built with Gatsbyjs. The needed Gatsby files are included.`,
-    author: `@nishyfish`,
+    description: ``,
+    author: `@nishlikefish`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,6 +24,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -59,8 +60,7 @@ module.exports = {
         name: `Nish Shukla`,
         short_name: `portfolio`,
         start_url: `/`,
-        background_color: `#003366`,
-        theme_color: `#003366`,
+        theme_color: `black`,
         display: `Nish Shukla`,
         icon: `src/images/svg/008-ganesha.svg`, // This path is relative to the root of the site.
       },

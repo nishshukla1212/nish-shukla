@@ -22,6 +22,7 @@ const Content = styled.div`
 
 const GatsbyLink = styled.a`
   margin-left: 5px;
+  color: rgb(197, 31, 93)
 `
 
 const Footer = styled.footer`

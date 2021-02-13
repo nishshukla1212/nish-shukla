@@ -44,7 +44,7 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <span>
-            <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+            <div class="nameContainer"><h1 class="fish"><span>Nish Shukla</span></h1></div>
             <Icon src={manIcon} alt="man"/><Icon src={desktopIcon} alt="man"/>
           </span>
         </Container>

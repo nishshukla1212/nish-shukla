@@ -1,5 +1,5 @@
 code {
-  background-color: hsla(0, 0%, 0%, 0.04);
+  background-color: hsla(0.58, 0.31, 0.11, 0.04);
 }
 
 body {
@@ -87,6 +87,8 @@ sup {
 }
 img {
   border-style: none;
+  opacity: .80;
+  transition: opacity .5s ease-in-out;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -199,8 +201,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #c8d1d7;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -208,6 +211,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background-color: #0d1117;
 }
 img {
   max-width: 100%;
@@ -578,7 +582,7 @@ td:last-child {
 }
 tt,
 code {
-  background-color: hsla(0, 0%, 0%, 0.04);
+  background-color: hsla(0.58, 0.31, 0.11, 0.04);
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
@@ -630,4 +634,19 @@ a::selection {
   html {
     font-size: 100%;
   }
+}
+
+.nameContainer:hover .fish span{
+  display: none;
+}
+
+.nameContainer:hover .fish::after{
+  content: "Nish like Fish";
+  color:#58A6FF
+}
+
+h1.fish{
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  margin-bottom: 2%;
 }

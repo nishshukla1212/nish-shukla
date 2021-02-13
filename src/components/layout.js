@@ -11,7 +11,10 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
 import Header from "./header"
+
+import "../components/localStyling.scss"
 import "./layout.css"
+
 
 const Content = styled.div`
   margin: 0 auto;
@@ -28,6 +31,7 @@ const GatsbyLink = styled.a`
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
+  bottom: 0px !important;
 `
 
 const Layout = ({ children }) => (

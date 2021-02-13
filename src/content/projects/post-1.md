@@ -2,6 +2,7 @@
 title: Changing the headline
 date: 2019-03-17
 draft: false
+pinned: true
 path: "/blog/example-title"
 
 ---

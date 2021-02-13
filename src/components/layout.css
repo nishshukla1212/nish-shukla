@@ -41,7 +41,7 @@ template {
 }
 a {
   font-style: normal;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: rgb(200,209,215, 0.8);
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -191,6 +191,8 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  height: 100%;
+  background-color: #0d1117;
 }
 * {
   box-sizing: inherit;
@@ -212,6 +214,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   background-color: #0d1117;
+  height: inherit;
 }
 img {
   max-width: 100%;
@@ -544,25 +547,26 @@ samp {
   line-height: 1.45rem;
 }
 abbr {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  border-bottom: 1px dotted rgb(200,209,215, 0.5);
   cursor: help;
 }
 acronym {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  border-bottom: 1px dotted rgb(200,209,215, 0.5);
   cursor: help;
 }
 abbr[title] {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  border-bottom: 1px dotted rgb(200,209,215, 0.5);
   cursor: help;
   text-decoration: none;
 }
 thead {
   text-align: left;
+  color: #c8d1d7;
 }
 td,
 th {
   text-align: left;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+  border-bottom: 1px solid rgb(200, 209, 215, 0.12);
   font-feature-settings: "tnum";
   -moz-font-feature-settings: "tnum";
   -ms-font-feature-settings: "tnum";
@@ -571,6 +575,7 @@ th {
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
+  color: #58A6FF !important;
 }
 th:first-child,
 td:first-child {
@@ -649,4 +654,10 @@ h1.fish{
   font-size: 3.5rem;
   margin-bottom: 0;
   margin-bottom: 2%;
+}
+
+span.token.number{
+  font-size: 0.87rem !important;
+  background-color: transparent;
+  padding-bottom: 2%;
 }

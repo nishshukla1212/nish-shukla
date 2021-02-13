@@ -15,8 +15,8 @@ const MarkedHeader = styled.h1`
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
+    hsl(0deg 0% 0% / 4%),
+    #c51f5d 100%,
     rgba(255, 250, 150, 0.25)
   );
 `
@@ -31,10 +31,13 @@ const MarkdownContent = styled.div`
   a {
     text-decoration: none;
     position: relative;
+    color: #c8d1d7;
 
     background-image: linear-gradient(
-      rgba(255, 250, 150, 0.8),
-      rgba(255, 250, 150, 0.8)
+      -100deg,
+      hsl(0deg 0% 0% / 4%),
+      #c51f5d 100%,
+      rgba(255, 250, 150, 0.25)
     );
     background-repeat: no-repeat;
     background-size: 100% 0.2em;

@@ -24,7 +24,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
-    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -61,7 +61,7 @@ module.exports = {
         short_name: `portfolio`,
         start_url: `/`,
         theme_color: `black`,
-        display: `Nish Shukla`,
+        display: `standalone`,
         icon: `src/images/svg/008-ganesha.svg`, // This path is relative to the root of the site.
       },
     },

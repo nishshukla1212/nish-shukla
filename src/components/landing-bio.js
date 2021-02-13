@@ -44,7 +44,7 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <span>
-            <div class="nameContainer"><h1 class="fish"><span>Nish Shukla</span></h1></div>
+            <div className="nameContainer"><h1 className="fish"><span>Nish Shukla</span></h1></div>
             <Icon src={manIcon} alt="man"/><Icon src={desktopIcon} alt="man"/>
           </span>
         </Container>

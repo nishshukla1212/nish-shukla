@@ -1,9 +1,10 @@
 ---
-title: "Second Title"
-date: "2019-03-18"
+title: Social Links
+date: 2021-02-15T05:00:00Z
 draft: false
 pinned: true
-path: "/blog/second-title"
----
+path: "/blog/social-links"
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+---
+* [Linked In](https://www.linkedin.com/in/nish-shukla/ "Linked In")
+* [Email](mailto:contact@nishshukla.dev "Email")

@@ -22,8 +22,8 @@ const MarkerHeader = styled.h3`
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
+    hsl(0deg 0% 0% / 4%),
+    #c51f5d 100%,
     rgba(255, 250, 150, 0.25)
   );
 `
@@ -39,6 +39,29 @@ const IndexPage = ({ data }) => {
       <SEO title="Blog" />
       <Content>
         <h1>Blog</h1>
+        <div class="columns is-multiline">
+          {data.allMarkdownRemark.edges
+            .filter(({ node }) => {
+              const pinned = node.frontmatter.pinned
+              return pinned === true
+            })
+            .map(({ node }) => (
+              <div class="column is-4">
+                <div className="card paddedCard">
+                  <header class="card-header">
+                    <a class="card-header-title" href={node.frontmatter.path}>
+                      {node.frontmatter.title}
+                    </a>
+                  </header>
+                  <div
+                    className="card-content"
+                  >
+                    <div className="content cardContent"><a href={node.frontmatter.path}>{node.excerpt}</a></div>
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
             const rawDate = node.frontmatter.rawDate
@@ -90,6 +113,7 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             rawDate: date
             path
+            pinned
           }
           fields {
             slug

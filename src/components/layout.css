@@ -47,6 +47,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+  color:  rgba(255,230,146);
 }
 abbr[title] {
   border-bottom: none;
@@ -619,7 +620,7 @@ h5::selection,
 h6::selection,
 p::selection,
 a::selection {
-  background: #fffa96cc;
+  background: #c51f5d;
 }
 
 .gatsby-highlight {
@@ -646,8 +647,10 @@ a::selection {
 }
 
 .nameContainer:hover .fish::after{
-  content: "Nish like Fish";
-  color:#58A6FF
+  content: "Nish like Niche";
+  color:rgba(255,230,146);
+  transition: ease-in;
+  transition-delay: 2s;
 }
 
 h1.fish{
